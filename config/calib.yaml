@@ -1,17 +1,18 @@
 # Data path. adjust them!
 common:
-    image_file: "/home/ycj/data/calib/image/0.png"
-    pcd_file: "/home/ycj/data/calib/pcd/0.pcd"
-    result_file: "/home/ycj/data/calib/extrinsic.txt"
+    image_file: "/home/laser/Livox/calibration/data/calib/image/2022-09-20-09-01-21.png"
+    pcd_file: "/home/laser/Livox/calibration/data/calib/pcd/2022-09-20-09-01-21.pcd"
+    result_file: "/home/laser/Livox/calibration/data/calib/extrinsic.txt"
 
 # Camera Parameters. Adjust them!
 camera:
-    camera_matrix: [1364.45, 0.0,      958.327,
-                0.0,     1366.46,  535.074,
-                0.0,     0.0,      1.0     ]
-    dist_coeffs: [0.0958277, -0.198233, -0.000147133, -0.000430056, 0.000000]
+    camera_matrix: [4920.29541,    0.0    , 2326.71761,
+                       0.0    , 4906.04119, 1535.54928,
+                       0.0    ,    0.0    ,    1.0     ]
+    dist_coeffs: [-0.502961, 0.257556, -0.008618, -0.010028, 0.000000]
 
 # Calibration Parameters.!
 calib:
-    calib_config_file: "/home/ycj/catkin_ws/src/livox_camera_calib/config/config_outdoor.yaml"
+    calib_config_file: "/home/laser/Livox/calibration/src/livox_camera_calib/config/config_outdoor.yaml"
+    #calib_config_file: "/home/laser/Livox/calibration/src/livox_camera_calib/config/config_indoor.yaml"
     use_rough_calib: true # set true if your initial_extrinsic is bad
